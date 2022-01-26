@@ -27,7 +27,7 @@ public class PersonService {
         Person savedPerson = personRepository.save(personToSave);
         return MessageResponseDTO
                 .builder()
-                .message("Person created succesfully. Person ID: " + personDTO.getId())
+                .message("Person created succesfully. Person ID: " + savedPerson.getId())
                 .build();
     }
 
