@@ -8,10 +8,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
+@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,16 +25,4 @@ public class Phone {
     @Column(nullable = false)
     private String number;
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || Hibernate.getClass(this) != Hibernate.getClass(obj)) return false;
-        Phone phone = (Phone) obj;
-        return id != null && Objects.equals(id, phone.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }
