@@ -30,7 +30,7 @@ public class PersonService {
         Person personToSave =  personMapper.toModel(personDTO);
 
         Person savedPerson = personRepository.save(personToSave);
-        return createResponseMessage("Registry saved succesfully: Person ID: ", savedPerson);
+        return createResponseMessage("Registry saved succesfully. Person ID: ", savedPerson);
     }
 
     public List<PersonDTO> listAll() {

@@ -1,4 +1,5 @@
-<h2>Digital Innovation One: Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot</h2>
+<h2>Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot</h2>
+<h3>Projeto desenvolvido para o Bootcamp Java Cognizant na Digital Innovation One - v1 26/01/2022</h3>
 
 * Setup inicial de projeto com o Spring Boot Initialzr
 * Criação de modelo de dados para o mapeamento de entidades em bancos de dados (Entity Package)
